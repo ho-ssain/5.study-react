@@ -6,3 +6,4 @@
 4. Object and Array destructuring
 5. default parameters
 6. spreed and rest operator
+7. arrow functions and ES6 methods
