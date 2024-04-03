@@ -34,12 +34,26 @@ const findPerson = persons.find(({ age }) => age === 27);
 console.log(`The person with age  27 is: `, findPerson);
 
 //!=> reduce method ..........................
-const totalAge = persons.reduce(
-  (total, nextPerson) => total + nextPerson.age,
-  0
-);
+const totalAge = persons.reduce((total, nextPerson) => {
+  console.log(nextPerson.age);
+  console.log(total);
+  return total + nextPerson.age;
+}, 0);
 console.log("🚀  ~ totalAge: ", totalAge);
 // Output - The sum of all ages in the array
 
-//!==>  method .........................
-//!==> method .........................
+//!==> includes method .........................
+const hasJohn = persons.includes({ name: "John" });
+console.log(`Does John exist? ${hasJohn}`);
+
+const fruits = ["apple", "banana", "mango"];
+const hasMango = fruits.includes("mango");
+console.log(`Does mango exist? ${hasMango}`);
+
+//!==> indexOf method .........................
+let johnIndex = persons.indexOf(persons.find((p) => p.name == "John"));
+console.log(`John's Index: ${johnIndex}`);
+
+//!==> findIndex method .........................
+johnIndex = persons.findIndex((person) => person.name === "John");
+console.log(`John's Index (using findIndex): ${johnIndex}`);
