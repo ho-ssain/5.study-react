@@ -1,0 +1,11 @@
+.rating {
+  cursor: pointer;
+}
+
+.active {
+  color: yellow;
+}
+
+.inActive {
+  color: white;
+}
