@@ -1,0 +1,67 @@
+.Book {
+  text-align: center;
+  border: 1px solid rgb(149, 185, 240);
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Book img {
+  width: 160px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Book .book-title {
+  color: cyan;
+  text-transform: uppercase;
+}
+
+.Book .book-author {
+  color: rgb(28, 111, 111);
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.Book .book-author:hover {
+  color: cyan;
+}
+
+.details {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.268);
+  border-radius: 15px;
+}
+
+.buy-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 20px 0 20px 0;
+  background-color: orangered;
+  color: white;
+}
+
+.buy-btn:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.buy-btn:active {
+  transform: scale(1);
+}
+
+.serial-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: yellowgreen;
+  border-radius: 20px 0 10px 0;
+  color: black;
+  font-weight: bolder;
+}
