@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.delete {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 5px;
+}
